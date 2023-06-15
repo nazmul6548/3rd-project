@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: rgb(175, 199, 199);
+    background-attachment: fixed;
+   
+}
+a{
+     font-weight: 500;
+}
+.header-area{
+    padding: 45px 0;
+}
+ 
+ /* header-content */
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.container{
+    padding: 0 15%;
+}
+a.theme-button{
+    text-decoration: none;
+    background-color:#00c0ff ;
+    color: antiquewhite;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 50px;
+    transition: .5s;
+}
+a.theme-butto:hover{
+    color: #00c0ff;
+    background-color: azure ;
+    
+}
+a.theme-button-small{
+    text-decoration: none;
+    background-color:#00c0ff ;
+    color: antiquewhite;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 50px;
+    transition: .5s;
+    font-size: 14px;
+}
+a.theme-button-small:hover{
+    color: #00c0ff;
+    background-color: azure ;
+}
+.section-heading{
+    text-align: center;
+    margin-bottom:75px ;
+}
+.section-heading h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    color:#00c0ff ;
+}
+.section-heading h2{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#fbfdfd ;
+    font-size:36px ;
+
+}
+.logo a{
+    text-decoration: none;
+    
+
+}
+.logo h1{
+    color: aliceblue;
+    font-size: 20px;
+}
+.main-menu a{
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 40px;
+    transition: .5s;
+}
+.main-menu a:hover {
+    color: #00c0ff;
+   
+}
+/*hero-area*/
+.hero-area{
+    padding: 80px 0;
+}
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-text h2{
+    font-size:50px;
+}
+.hero-text p{
+    font-size: 20px;
+}
+/*about area css*/
+.about-area{
+    background-color: #1e1345;
+    padding: 100px 0;
+
+}
+.about-content{
+    display: flex;
+    align-items: center;
+
+}
+.about-image{
+    flex: 1;
+}
+.about-text{
+    flex: 1;
+}
+.about-text h1{
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+/*
+service area css
+*/
+.service-area{
+    padding: 100px 0;
+}
+.service-containt{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.single-service{
+    background-color: #1e1345;
+    padding: 30px;
+}
+.single-service h3{
+    font-size: 26px;
+    color: #fff;
+    margin-bottom:15px ;
+}
+/*
+contact area css
+*/
+.contact-area{
+    background-color: #1e1345;
+    padding: 100px 0;
+}
+.contact-content form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    grid-template-areas:
+    "f l"
+    "e p"
+    "m m"
+    "s s";
+
+}
+#first-name{
+    grid-area: f;
+
+}
+#last-name{
+    grid-area: l;
+}
+#email-adress{
+    grid-area: e;
+}
+#phone-number{
+    grid-area: p;
+}
+#message{
+    grid-area: m;
+}
+#send-message{
+    grid-area: s;
+    background-color: #13034e;
+    cursor: pointer;
+}
+.contact-content input{
+    font-size: 17px;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid rgb(108, 110, 108);
+    color: #f4fafa;
+
+}
+.contact-content textarea{
+       font-size: 17px;
+       font-family:'Times New Roman', Times, serif;
+       padding:12px ;
+       background-color: transparent;
+       border: 1px solid rgb(125, 131, 125);
+       color: #fbfdfd;
+}
+.footer-area{
+    padding: 25px;
+    text-align: center;
+    background-color: #160b41;
+}
