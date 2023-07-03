@@ -15,7 +15,12 @@
                         <h1>NaZMuL</h1>
                     </a>
                 </div>
-                <nav class="main-menu">
+                <div class="menu-icon" onclick="menuFunction()" >
+                    <div class="icon">
+                        <img src="./img/7124209_menu_icon.png" alt="">
+                    </div>
+                </div>
+                <nav class="main-menu" id="main-menu">
                     <a href="index.html">Home</a>
                     <a href="#about-area">About</a>
                     <a href="#service-area">Services</a>
@@ -62,7 +67,7 @@
                 <h3>Services</h3> 
                 <h2>What I do</h2>
             </div>
-            <div class="service-containt">
+            <div class="service-content">
                 <div class="single-service">
                     <h3>Website Design</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iure mollitia aperiam quisquam reiciendis sint repudiandae corporis deserunt perferendis incidunt qui, harum eligendi temporibus sit repellat sunt suscipit</p>
@@ -99,7 +104,7 @@
          <section class="contact-area" id="contact-area">
             <div class="container">
                 <div class="section-heading">
-                    <h3>Contract</h3>
+                    <h3>Contact</h3>
                     <h2>Feel Free To Contact Me</h2>
                 </div>
                 <div class="contact-content">
@@ -121,5 +126,12 @@
             <p>&copy; john doe 2023, All Right Reserved.</p>
         </div>
     </footer>
+    <script>
+        function menuFunction() {
+            var menu = document.getElementById("main-menu");
+            menu.classList.toggle("show-menu");
+
+        }
+    </script>
 </body>
 </html>
